@@ -1,11 +1,11 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { Routes } from '@angular/router';
 
+import { LoginComponent } from './login/login.component';
+import { PwdComponent } from './pwd/pwd.component';
 
-const routes: Routes = [];
-
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
-})
-export class AppRoutingModule { }
+export const RUTAS: Routes = [
+  {path: '',  redirectTo: 'login', pathMatch: 'full' },
+  {path: 'login', component: LoginComponent},
+  {path: 'loginPsw/:loguser', component: PwdComponent},
+  {path: '**', pathMatch: 'full', redirectTo: 'login' }
+];

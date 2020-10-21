@@ -1,0 +1,11 @@
+
+<div class="container">
+    <div class="row">
+      <div class="col align-self-center">
+        <input type="text" class="form-control form-control-lg" sytyle="width= 50%" placeholder="Usuario" #Usuario [disabled]="Espera"><br>
+        <button type="button" class="btn btn-outline-secondary btn-lg" name="button" (click)="getUser(Usuario.value)" [disabled]="Espera" > {{TituloButton}}<mat-progress-bar mode="query" *ngIf="Espera"></mat-progress-bar></button>
+        
+      </div>
+    </div>
+  </div>
+  

@@ -1,0 +1,44 @@
+
+.message {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  
+    background-color: rgba(255,255,255,0.9);
+    box-shadow: 3px 3px 30px 10px rgba(0,0,0,0.4);
+    color: #fff;
+    padding: 0.5em;
+    text-align: center;
+    position: absolute;
+    top: 3em;
+    left: 0;
+    right: 0;
+    margin: auto;
+    
+    width: 28%;
+    min-width: 280px;
+    
+     
+  
+  }
+
+  .my-overlay {
+    left: 0 !important;
+    top: 0 !important;
+    z-index: 10000 !important;
+    width: 100% !important;
+    height: 100% !important;
+    position: fixed !important;
+    background-color: rgba(0,0,0,0.9) !important;
+    cursor: pointer !important;
+    visibility: visible !important;
+    transition: visibility 0s, opacity 0.4s linear !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: wait !important;
+}
+.my-overlay i.fa.fa-spinner.fa-spin, .spinner-big {
+    font-size: 100px !important;
+}
+  
