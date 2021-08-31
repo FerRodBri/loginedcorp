@@ -6,8 +6,8 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
   providedIn: 'root'
 })
 export class GlobalService {
-   apiServer = 'https://devedcorp.fabsi.com.mx/api/';
-  // apiServer = 'https://edcorp.mx/api/';
+  // apiServer = 'https://devedcorp.fabsi.com.mx/api/';
+   apiServer = 'https://edcorp.mx/api/';
 
   headers = new HttpHeaders()
   .set('Content-Type', 'application/json; charset=utf-8')
